@@ -19,6 +19,7 @@ const Login = ({ classes }) => {
       });
       const { me } = await client.request(ME_QUERY); // destructured from data.me 
       console.log("ME: ", me);
+      console.log('GOOGLE USER: ', googleUser)
       dispatch({ type: "LOGIN_USER", payload: me });
       dispatch({ type: "IS_LOGGED_IN", payload: googleUser.isSignedIn});
     } catch (error) {
