@@ -17,7 +17,7 @@ const Signout = ({ classes }) => {
   return (
     < GoogleLogout
       onLogoutSucces={onSignout}
-      render={({ onClick }) => (
+      render={({ onClick }) => ( // for some reason it doesn't respond to onClick 
         // <span className={classes.root} onClick={onClick}>
         <span className={classes.root} onClick={onSignout}>
           <Typography
